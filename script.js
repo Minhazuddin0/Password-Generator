@@ -12,3 +12,11 @@ const symbolsCheck = document.querySelector("[#symbols]");
 const indicator = document.querySelector("[data-indicator]");
 const generateBtn = document.querySelector("[.generatebutton]");
 const allCheckBox = document.querySelectorAll("input[type=checkbox]");
+
+
+let password = "";
+let passwordLength = 10;
+let checkCount = 1;
+// set strength circle color to gray
+
+
