@@ -11,6 +11,7 @@ const symbolsCheck = document.querySelector("[#symbols]");
 const indicator = document.querySelector("[data-indicator]");
 const generateBtn = document.querySelector("[.generatebutton]");
 const allCheckBox = document.querySelectorAll("input[type=checkbox]");
+const symbols = '~!@#$%^&*)(_+/*-+"><,.?/\|[]{}=`'
 
 
 let password = "";
@@ -33,6 +34,26 @@ function setIndicator(){
 
 function getRndInteger(min, max){
     Math.floor (Math.random() * (max - min)) + min
-
-
 }
+
+function generateRandomNumber(){
+    return getRndInteger(0,9);
+}
+
+
+function generateLowerCase(){
+    return String.fromCharCode(getRndInteger(97, 123));
+}
+
+
+
+function generateUpperCase(){
+    return String.fromCharCode(getRndInteger(65, 90));
+}
+
+
+function generateSymbol(){
+    
+}
+
+
