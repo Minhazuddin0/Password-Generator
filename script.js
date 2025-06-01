@@ -64,11 +64,11 @@ function calcStrength(){
     let hasNum = false;
     let hasSym = false;
     if(uppercaseCheck.checked) hasUpper = true;
-    if(lowercaseCheck.checked) haslower = true;
+    if(lowercaseCheck.checked) hasLower = true;
     if(numbersCheck.checked) hasNum = true;
     if(symbolsCheck.checked) hasSym = true;
 
-    if(hasUpper && hasLower && (hasNum || hasSym) passwordLength >= 8){
+    if(hasUpper && hasLower && (hasNum || hasSym) && passwordLength >= 8){
         setIndicator("#0f0");
     }  else if (
         (hasLower || hasUpper) &&
@@ -79,5 +79,9 @@ function calcStrength(){
     } else {
         setIndicator("#f00");
     }
+}
+
+function copyContent(){
+
 }
 
