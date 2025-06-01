@@ -53,7 +53,31 @@ function generateUpperCase(){
 
 
 function generateSymbol(){
-    
+    const randNum = getRndInteger(0, symbols.length);
+    return symbols.charAt(randNum);
 }
 
+
+function calcStrength(){
+    let hasUpper = false;
+    let hasLower = false;
+    let hasNum = false;
+    let hasSym = false;
+    if(uppercaseCheck.checked) hasUpper = true;
+    if(lowercaseCheck.checked) haslower = true;
+    if(numbersCheck.checked) hasNum = true;
+    if(symbolsCheck.checked) hasSym = true;
+
+    if(hasUpper && hasLower && (hasNum || hasSym) passwordLength >= 8){
+        setIndicator("#0f0");
+    }  else if (
+        (hasLower || hasUpper) &&
+        (hasNum || hasSym) &&
+        passwordLength >= 6
+    ) {
+        setIndicator("#ff0");
+    } else {
+        setIndicator("#f00");
+    }
+}
 
