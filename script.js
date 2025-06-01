@@ -107,4 +107,9 @@ inputSlider.addEventListener('input', (e) => {
 })
 
 
+copyBtn.addEventListener('click', () =>{
+    if(passwordDisplay.value)
+        copyContent();
+} )
+
 
