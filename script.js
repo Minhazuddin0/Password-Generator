@@ -1,5 +1,4 @@
 const inputSlider = document.querySelector("[data-lengthSlider]");
-
 const lengthDisplay = document.querySelector("[data-lengthNumber]");
 
 const passwordDisplay = document.querySelector("[data-passwordDisplay]");
@@ -15,8 +14,25 @@ const allCheckBox = document.querySelectorAll("input[type=checkbox]");
 
 
 let password = "";
-let passwordLength = 10;
 let checkCount = 1;
+let passwordLength = 10
+handleSlider();
 // set strength circle color to gray
 
 
+// set passwordLength
+function handleSlider(){
+    inputSlider.value = passwordLength;
+    lengthDisplay.innerText = passwordLength;
+}
+
+function setIndicator(){
+    indicator.style.backgroundColor = color;
+    // shadow
+}
+
+function getRndInteger(min, max){
+    Math.floor (Math.random() * (max - min)) + min
+
+
+}
