@@ -90,8 +90,13 @@ try {
 
 catch(e){
     copyMsg.innerText = "failed";
-
+    
 }
+// to make copy wala span visible
+copyMsg.classList.add("active");
+setTimeout( () => {
+    copyMsg.classList.remove("active")
+}, 2000 );
     
 
 }
