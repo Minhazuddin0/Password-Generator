@@ -98,8 +98,15 @@ setTimeout( () => {
     copyMsg.classList.remove("active")
 }, 2000 );
     
-
 }
+
+function handleCheckBoxChange(){
+    
+}
+
+allCheckBox.forEach((checkbox) =>{
+    checkbox.addEventListener('change', handleCheckBoxChange );
+})
 
 inputSlider.addEventListener('input', (e) => {
     passwordLength = e.target.value;
@@ -115,6 +122,6 @@ copyBtn.addEventListener('click', () =>{
 
 generateBtn.addEventListener('click', () =>{
     if ();
-})
+})  
 
 
