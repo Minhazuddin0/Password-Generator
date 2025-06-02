@@ -130,9 +130,21 @@ copyBtn.addEventListener('click', () =>{
         copyContent();
 } )
 
-
 generateBtn.addEventListener('click', () =>{
-    if ();
-})  
+    // none of the checkbox are selected
+    if(checkCount <= 0) return;
+
+    if(passwordLength < checkCount){
+        passwordLength = checkCount;
+        handleSlider();
+    }
+
+    // lets start the journey to find new password
+    
+    // remove old password
+
+    password = "";
+});
+
 
 
