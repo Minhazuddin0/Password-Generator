@@ -148,7 +148,21 @@ generateBtn.addEventListener('click', () =>{
 
 // lets put the stuff mentioned by checkboxes
 
+if(uppercaseCheck.checked){
+    password += generateUpperCase(); 
+}
 
+if(lowercaseCheck.checked){
+    password += generatelowerCase(); 
+}
+
+if(numbersCheck.checked){
+    password += generateRandomNumber(); 
+}
+
+if(symbolsCheck.checked){
+    password += generateSymbol(); 
+}
 
 
 
