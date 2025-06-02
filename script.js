@@ -144,25 +144,42 @@ generateBtn.addEventListener('click', () =>{
     // remove old password
 
     password = "";
-});
+
 
 // lets put the stuff mentioned by checkboxes
 
-if(uppercaseCheck.checked){
-    password += generateUpperCase(); 
-}
+// if(uppercaseCheck.checked){
+//     password += generateUpperCase(); 
+// }
 
-if(lowercaseCheck.checked){
-    password += generatelowerCase(); 
-}
+// if(lowercaseCheck.checked){
+//     password += generateLowerCase(); 
+// }
 
-if(numbersCheck.checked){
-    password += generateRandomNumber(); 
-}
+// if(numbersCheck.checked){
+//     password += generateRandomNumber(); 
+// }
 
-if(symbolsCheck.checked){
-    password += generateSymbol(); 
-}
+// if(symbolsCheck.checked){
+//     password += generateSymbol(); 
+// }
+
+
+let funcArr = [];
+
+if(uppercaseCheck.checked)
+    funcArr.push(generateUpperCase);
+
+if(lowercaseCheck.checked)
+    funcArr.push(generateLowerCase);
+
+if(numbersCheck.checked)
+    funcArr.push(generateRandomNumber);
+
+if(symbolsCheck.checked)
+    funcArr.push(generateSymbol);
 
 
 
+
+});
