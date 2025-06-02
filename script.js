@@ -146,5 +146,9 @@ generateBtn.addEventListener('click', () =>{
     password = "";
 });
 
+// lets put the stuff mentioned by checkboxes
+
+
+
 
 
