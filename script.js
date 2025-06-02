@@ -113,3 +113,8 @@ copyBtn.addEventListener('click', () =>{
 } )
 
 
+generateBtn.addEventListener('click', () =>{
+    if ();
+})
+
+
