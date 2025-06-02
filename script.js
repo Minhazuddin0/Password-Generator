@@ -101,7 +101,18 @@ setTimeout( () => {
 }
 
 function handleCheckBoxChange(){
-    
+    checkCount = 0;
+    allCheckBox.forEach((checkbox) =>{
+        if(checkbox.checked)
+            checkCount++;
+    });
+
+    // condition
+
+    if(passwordLength < checkCount){
+        passwordLength = checkCount;
+        handleSlider();
+    }
 }
 
 allCheckBox.forEach((checkbox) =>{
