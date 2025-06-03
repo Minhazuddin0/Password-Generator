@@ -204,7 +204,7 @@ generateBtn.addEventListener('click', () => {
     }
 
     console.log("Compulsory addition done");
-
+  
     // remaining addition
 
     for (let i = 0; i<passwordLength-funcArr.length; i++) {
@@ -213,7 +213,7 @@ generateBtn.addEventListener('click', () => {
     }
 
 
-    
+
     console.log("Remaining addition done");
 
     //shuffle the password 
