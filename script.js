@@ -155,6 +155,10 @@ generateBtn.addEventListener('click', () => {
 
     // lets start the journey to find new password
 
+
+    console.log("Starting the journey");
+    
+    
     // remove old password
 
     password = "";
@@ -199,6 +203,8 @@ generateBtn.addEventListener('click', () => {
         password += funcArr[i]();
     }
 
+    console.log("Compulsory addition done");
+
     // remaining addition
 
     for (let i = 0; i < passwordLength - funcArr.length; i++) {
@@ -206,13 +212,17 @@ generateBtn.addEventListener('click', () => {
         password += funcArr[randIndex]();
     }
 
+    console.log("Remaining addition doen");
+
     //shuffle the password 
 
     password = shufflePassword(Array.from(password));
+    console.log("Shiffling done");
 
     // show in UI
 
     passwordDisplay.value = password;
+    console.log("UI addition done");
 
     // calculate strength
 
