@@ -179,6 +179,31 @@ if(numbersCheck.checked)
 if(symbolsCheck.checked)
     funcArr.push(generateSymbol);
 
+// compulsory addition 
+
+for(let i =0; i<funcArr.length; i++){
+      password += funcArr[i]();
+}
+
+// remaining addition
+
+for (let i=0; i<passwordLength-funcArr.length; i++){
+    let randIndex = getRndInteger(0, funcArr.length);
+    password += funcArr[randIndex]();
+}
+
+//shuffle the password 
+
+password = shufflePassword();
+
+// show in UI
+
+passwordDisplay.value = password;
+
+// calculate strength
+
+calcStrength();
+
 
 
 
