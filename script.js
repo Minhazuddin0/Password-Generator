@@ -14,8 +14,10 @@ const allCheckBox = document.querySelectorAll("input[type=checkbox]");
 const symbols = '~!@#$%^&*)(_+/*-+"><,.?/\|[]{}=`'
 
 
+// initially
+
 let password = "";
-let checkCount = 1;
+let checkCount = 0;
 let passwordLength = 10
 handleSlider();
 // set strength circle color to gray
@@ -33,7 +35,7 @@ function setIndicator() {
 }
 
 function getRndInteger(min, max) {
-    Math.floor(Math.random() * (max - min)) + min
+    return Math.floor(Math.random() * (max - min)) + min
 }
 
 function generateRandomNumber() {
@@ -100,7 +102,7 @@ async function copyContent() {
 
 }
 
-function shufflePassword(shufflePassword) {
+function shufflePassword(array) {
     // fisher yates method
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -146,7 +148,8 @@ copyBtn.addEventListener('click', () => {
 
 generateBtn.addEventListener('click', () => {
     // none of the checkbox are selected
-    if (checkCount <= 0) return;
+    if (checkCount == 0) 
+    return;
 
     if (passwordLength < checkCount) {
         passwordLength = checkCount;
@@ -204,22 +207,21 @@ generateBtn.addEventListener('click', () => {
     }
 
     console.log("Compulsory addition done");
-  
+
     // remaining addition
 
     for (let i = 0; i<passwordLength-funcArr.length; i++) {
         let randIndex = getRndInteger(0, funcArr.length);
+        console.log("randIndex" + randIndex);
         password += funcArr[randIndex]();
     }
-
-
-
     console.log("Remaining addition done");
 
     //shuffle the password 
 
     password = shufflePassword(Array.from(password));
-    console.log("Shiffling done");
+
+    console.log("Shuffling done");
 
     // show in UI
 
