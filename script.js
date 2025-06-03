@@ -199,7 +199,7 @@ generateBtn.addEventListener('click', () => {
 
     // compulsory addition 
 
-    for (let i = 0; i < funcArr.length; i++) {
+    for (let i = 0; i < funcArr.length; i++) { 
         password += funcArr[i]();
     }
 
