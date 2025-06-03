@@ -212,6 +212,8 @@ generateBtn.addEventListener('click', () => {
         password += funcArr[randIndex]();
     }
 
+
+    
     console.log("Remaining addition done");
 
     //shuffle the password 
