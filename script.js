@@ -100,6 +100,20 @@ setTimeout( () => {
     
 }
 
+function shufflePassword(shufflePassword){
+    // fisher yates method
+    for( let i= array.length - 1; i>0; i--){
+        const j = Math.floor(Math.random() * (i +1));
+        const temp = array[i];
+        array[i] = array [j];
+        array[j] = temp;
+    }
+    let str = "";
+    array.forEach((el) => (str += el));
+    return str;
+
+}
+
 function handleCheckBoxChange(){
     checkCount = 0;
     allCheckBox.forEach((checkbox) =>{
@@ -194,7 +208,7 @@ for (let i=0; i<passwordLength-funcArr.length; i++){
 
 //shuffle the password 
 
-password = shufflePassword();
+password = shufflePassword(Array.from(password));
 
 // show in UI
 
