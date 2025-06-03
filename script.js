@@ -18,7 +18,7 @@ const symbols = '~!@#$%^&*)(_+/*-+"><,.?/\|[]{}=`'
 
 let password = "";
 let checkCount = 0;
-let passwordLen gth = 10
+let passwordLength = 10
 handleSlider();
 // set strength circle color to gray
 
