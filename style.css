@@ -14,13 +14,13 @@
     --vb-violet: hsl(210, 100%, 56%);   /* Generate button */
     --vb-violet2: hsl(210, 100%, 63%);  /* Button hover */
 
-    --dk-yellow: hsl(48, 100%, 60%);  /* Yellow text + slider thumb */
+    --vb-yellow: hsl(48, 100%, 60%);  /* Yellow text + slider thumb */
 
 
-    --dk-white: hsl(0,0%, 100%);   /* Main heading */
+    --pl-white: hsl(0,0%, 100%);   /* Main heading */
     
-    --dk-cyan: hsl(190, 100%, 60%);   /* Checkbox border */
-    --dk-cyan2: hsl(190, 100%, 80%);  /* Checkbox checked */
+    --vb-cyan: hsl(190, 100%, 60%);   /* Checkbox border */
+    --vb-cyan2: hsl(190, 100%, 80%);  /* Checkbox checked */
 
     --dk-text: hsl(240, 8%, 80%);   /* Label text */
 
@@ -33,6 +33,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background:linear-gradient(135deg, hsl(258, 32%, 18%), hsl(210, 100%, 56%));
+    justify-content: center;
+    background: linear-gradient(135deg, hsl(258, 32%, 16%), hsl(240, 40%, 26%));
 
+ }
+
+ h1{
+    color: var(--pl-white);
  }
