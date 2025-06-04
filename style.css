@@ -8,20 +8,20 @@
 }
 
  :root {
-    --dk-violet: hsl(268,75%, 9%);
-    --lt-violet: hsl(268,47%, 21%);
-    --lt-violet2: hsl(281,89%, 26%);
-    --vb-violet: hsl(285,91%, 52%);    
-    --vb-violet2: hsl(290,70%, 36%);    
+    --dk-violet: hsl(258, 32%, 18%);  /* Deep background */
+    --lt-violet: hsl(258, 30%, 22%);  /* Card background */
+    --lt-violet2: hsl(258, 30%, 30%);   /* Slider track */
+    --vb-violet: hsl(210, 100%, 56%);   /* Generate button */
+    --vb-violet2: hsl(210, 100%, 63%);  /* Button hover */
 
-    --dk-yellow: hsl(52,100%, 62%);
+    --dk-yellow: hsl(48, 100%, 60%);  /* Yellow text + slider thumb */
 
 
-    --dk-white: hsl(0,0%, 100%);
+    --dk-white: hsl(0,0%, 100%);   /* Main heading */
     
-    --dk-cyan: hsl(176,100%, 44%);
-    --dk-cyan2: hsl(177,92%, 70%);
+    --dk-cyan: hsl(190, 100%, 60%);   /* Checkbox border */
+    --dk-cyan2: hsl(190, 100%, 80%);  /* Checkbox checked */
 
-    --dk-text: hsl(198,20%, 13%);
+    --dk-text: hsl(240, 8%, 80%);   /* Label text */
 
  }
