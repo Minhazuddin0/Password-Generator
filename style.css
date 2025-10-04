@@ -29,7 +29,7 @@
 
  .container{
     width: 100vw;
-    max-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,7 +43,7 @@
     opacity: 0.75;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-align: center;
+    text-align: center ;
     line-height: 1.2;
 
  }
