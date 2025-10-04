@@ -6,3 +6,48 @@
     box-sizing: border-box;
     font-family: 'League Spartan' , sans-serif;
 }
+
+ :root {
+    --dk-violet: hsl(258, 32%, 18%);  /* Deep background */
+    --lt-violet: hsl(258, 30%, 22%);  /* Card background */
+    --lt-violet2: hsl(258, 30%, 30%);   /* Slider track */
+    --vb-violet: hsl(210, 100%, 56%);   /* Generate button */
+    --vb-violet2: hsl(210, 100%, 63%);  /* Button hover */
+
+    --vb-yellow: hsl(48, 100%, 60%);  /* Yellow text + slider thumb */
+
+
+    --pl-white: hsl(0,0%, 100%);   /* Main heading */
+    
+    --vb-cyan: hsl(190, 100%, 60%);   /* Checkbox border */
+    --vb-cyan2: hsl(190, 100%, 80%);  /* Checkbox checked */
+
+    --dk-text: hsl(240, 8%, 80%);   /* Label text */
+
+ }
+
+
+ .container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, hsl(258, 32%, 16%), hsl(240, 40%, 26%));
+
+ }
+
+ h1{
+    color: var(--pl-white);
+    opacity: 0.75;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 1.2;
+
+ }
+
+ .display-container{
+    display: flex;
+ }

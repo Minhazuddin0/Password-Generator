@@ -238,5 +238,3 @@ generateBtn.addEventListener('click', () => {
 
 
 });
-
-
