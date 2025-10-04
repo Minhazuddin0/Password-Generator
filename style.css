@@ -27,7 +27,7 @@
  }
 
 
- .container{
+ body {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -35,6 +35,12 @@
     align-items: center;
     justify-content: center;
     background: radial-gradient(circle,rgba(238, 174, 202, 1) 65%, rgba(148, 187, 233, 1) 99%);
+
+ }
+
+ .container{
+   width: 90%;
+   max-width: 450px;
 
  }
 
@@ -49,5 +55,23 @@
  }
 
  .display-container{
-    display: flex;
+   position: relative;
+   background-color: var(--dk-violet);
+   border-radius: 1rem;
+   border-bottom: 0.35 solid var(--lt-violet2);
+   margin: 1rem 0;
+   padding: 0.35rem;
  }
+
+ .display{
+   width: 100%;
+   background-color: transparent;
+   padding: 1.15rem 1rem;
+   color: var(--vb-yellow);
+   font-size: 1.5rem;
+   line-height: 30px;
+   letter-spacing: 1px;
+   padding-right: 3.25rem;
+ }
+  
+ .display::placeholder {}
