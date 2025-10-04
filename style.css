@@ -58,7 +58,7 @@
    position: relative;
    background-color: var(--dk-violet);
    border-radius: 1rem;
-   border-bottom: 0.35 solid var(--lt-violet2);
+   border-bottom: 0.35rem solid var(--lt-violet2);
    margin: 1rem 0;
    padding: 0.35rem;
  }
@@ -72,6 +72,27 @@
    line-height: 30px;
    letter-spacing: 1px;
    padding-right: 3.25rem;
+   border: none ;  
  }
   
- .display::placeholder {}
+ .display::placeholder {
+   position: absolute;
+   top: 50%;
+   left: 1.5rem;
+   font-size: 1.5rem;
+   line-height: 30px;
+   color: var(--vb-yellow);
+   opacity: 0.65;
+   text-transform: uppercase;
+   transform: translateY(-50% );
+   
+ }
+
+
+ .display-container button{
+   position: absolute;
+   top: 50%;
+   right: 1.5rem;
+   transform: translateY(-50% );
+
+ }
