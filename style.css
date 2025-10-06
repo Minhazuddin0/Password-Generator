@@ -169,7 +169,7 @@
 }
 
 .check input{
-  appearance: none;
+  /* appearance: none; */
   width: 20px;
   height: 20px;
   border: 1px solid var(--vb-cyan);
@@ -195,4 +195,10 @@
  
 
      
+}
+
+.check label{
+  color: var(--pl-white );
+  font-size: 1.25rem;
+  letter-spacing: '0.75px';
 }
