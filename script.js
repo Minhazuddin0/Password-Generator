@@ -20,8 +20,9 @@ let password = "";
 let checkCount = 0;
 let passwordLength = 10
 handleSlider();
-// set strength circle color to gray
 
+// set strength circle color to gray
+setIndicator("#ccc");
 
 // set passwordLength
 function handleSlider() {

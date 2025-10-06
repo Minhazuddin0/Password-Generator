@@ -96,3 +96,51 @@
    transform: translateY(-50% );
 
  }
+
+
+ .input-container{
+
+  width: 100%;
+  background-color: var(--dk-violet);
+  border-radius: 1rem;
+  padding: 2rem;
+  border-bottom: 0.35rem solid var(--lt-violet2);
+ }
+
+.length-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+
+.length-container p:nth-child(1){
+  color: var(--pl-white);
+  font-size: 1.5rem;
+
+}
+
+.length-container p:nth-child(2){
+  color: var(--vb-yellow);
+  font-size: 1.5rem;
+  
+}
+
+
+.strength-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.75rem;
+  margin-bottom: 2rem;
+} 
+
+.strength-container p{
+  color: var(--pl-white);
+  font-size: 1.5rem;
+}
+.indicator{
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  colo
+}
