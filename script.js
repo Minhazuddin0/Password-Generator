@@ -28,6 +28,9 @@ setIndicator("#ccc");
 function handleSlider() {
     inputSlider.value = passwordLength;
     lengthDisplay.innerText = passwordLength;
+    const min = inputSlider.min;     
+    const max =inputSlider.max;
+    inputSlider.style.backgroundSize =  
 }
 
 function setIndicator(color) {
@@ -38,7 +41,7 @@ function setIndicator(color) {
 
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min)) + min
-}
+} 
 
 function generateRandomNumber() {
     return getRndInteger(0, 9);
